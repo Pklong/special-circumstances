@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var ctx = canvas.getContext('2d');
 
   var gameView = new asteroids.GameView(ctx);
+  gameView.bindKeyHandlers();
   gameView.start();
 
 })
